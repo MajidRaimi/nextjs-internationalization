@@ -1,5 +1,7 @@
 {
     "home": {
-        "title": "Hello World!"
+        "title": "Welcome to Next.js with i18n",
+        "description": "Learn how to use Next.js with i18n to a internalization to your code in very simple way.",
+        "button": "Change Language"
     }
 }

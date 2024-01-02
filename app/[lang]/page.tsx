@@ -1,7 +1,7 @@
 
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib";
-import { ChangeLocale } from "../components";
+import { Hero } from "./components";
 
 const page = async ({
   params
@@ -9,13 +9,12 @@ const page = async ({
   params: { lang: Locale }
 }) => {
 
-  const { home } = await getDictionary(params.lang);
+
 
   return (
-    <div>
-      <p>{home.title}</p>
-      <ChangeLocale />
-    </div>
+    <>
+      <Hero params={params} />
+    </>
   )
 }
 
